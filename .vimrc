@@ -26,7 +26,7 @@ set relativenumber
 set ruler
 
 " Blink cursor on error instead of beeping (grr)
-set visualbell
+" set visualbell
 
 " Encoding
 set encoding=utf-8
@@ -34,8 +34,8 @@ set encoding=utf-8
 " Whitespace
 set wrap
 set textwidth=79
-set formatoptions=tcqrn1
-set tabstop=2
+set formatoptions=cqrn1
+set tabstop=4
 set shiftwidth=2
 set softtabstop=2
 set expandtab

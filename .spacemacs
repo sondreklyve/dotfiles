@@ -41,20 +41,6 @@ This function should only modify configuration layer settings."
      ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
      ;; `M-m f e R' (Emacs style) to install them.
      ;; ----------------------------------------------------------------
-     (auto-completion :variables
-                      auto-completion-return-key-behavior 'complete
-                      auto-completion-tab-key-behavior 'cycle
-                      auto-completion-complete-with-key-sequence nil
-                      auto-completion-complete-with-key-sequence-delay 0.1
-                      auto-completion-minimum-prefix-length 2
-                      auto-completion-idle-delay 0.2
-                      auto-completion-private-snippets-directory nil
-                      auto-completion-enable-snippets-in-popup nil
-                      auto-completion-enable-help-tooltip nil
-                      auto-completion-use-company-box nil
-                      auto-completion-enable-sort-by-usage nil
-                      auto-completion-enable-snippets-in-popup t
-                      auto-completion-enable-help-tooltip t)
      ;; better-defaults
      (c-c++ :variables c-c++-enable-clang-support t)
      emacs-lisp
@@ -624,7 +610,7 @@ This function is called at the very end of Spacemacs initialization."
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(yaml-mode drag-stuff add-node-modules-path company-web web-completion-data counsel-css emmet-mode helm-css-scss impatient-mode htmlize simple-httpd prettier-js pug-mode sass-mode haml-mode scss-mode slim-mode tagedit web-beautify web-mode auctex-latexmk ccls company-auctex company-math company-reftex evil-tex auctex forge ghub closql emacsql-sqlite emacsql treepy git-link git-messenger git-modes git-timemachine gitignore-templates helm-git-grep helm-ls-git helm-lsp lsp-latex lsp-origami origami lsp-ui math-symbol-lists smeargle treemacs-magit magit magit-section git-commit with-editor csv-mode company-quickhelp blacken code-cells company-anaconda anaconda-mode counsel-gtags counsel swiper ivy cython-mode dap-mode lsp-docker lsp-treemacs bui yaml evil-matchit ggtags helm-cscope helm-gtags helm-pydoc importmagic epc ctable concurrent live-py-mode lsp-pyright lsp-python-ms lsp-mode markdown-mode spinner nose pip-requirements pipenv load-env-vars pippel poetry transient compat py-isort pydoc pyenv-mode pythonic pylookup pytest pyvenv smartparens sphinx-doc stickyfunc-enhance window-purpose imenu-list xcscope yapfify auto-complete-clang flycheck-pos-tip pos-tip flycheck-rtags flycheck-ycmd ac-ispell auto-complete auto-yasnippet company-c-headers company-rtags company-ycmd fuzzy helm-c-yasnippet helm-company company yasnippet-snippets yasnippet doom-themes ycmd which-key use-package treemacs-projectile treemacs-icons-dired treemacs-evil ranger quickrun pcre2el overseer nameless macrostep inspector hybrid-mode holy-mode help-fns+ helm-xref helm-themes helm-swoop helm-rtags helm-projectile helm-org helm-mode-manager helm-make helm-descbinds helm-ag google-c-style gendoxy flycheck-package flycheck-elsa evil-mc evil-evilified-state emr elisp-slime-nav elisp-def dotenv-mode disaster diminish cpp-auto-include bind-map auto-compile ace-jump-helm-line))
+   '(fontawesome company-statistics yaml-mode drag-stuff add-node-modules-path company-web web-completion-data counsel-css emmet-mode helm-css-scss impatient-mode htmlize simple-httpd prettier-js pug-mode sass-mode haml-mode scss-mode slim-mode tagedit web-beautify web-mode auctex-latexmk ccls company-auctex company-math company-reftex evil-tex auctex forge ghub closql emacsql-sqlite emacsql treepy git-link git-messenger git-modes git-timemachine gitignore-templates helm-git-grep helm-ls-git helm-lsp lsp-latex lsp-origami origami lsp-ui math-symbol-lists smeargle treemacs-magit magit magit-section git-commit with-editor csv-mode company-quickhelp blacken code-cells company-anaconda anaconda-mode counsel-gtags counsel swiper ivy cython-mode dap-mode lsp-docker lsp-treemacs bui yaml evil-matchit ggtags helm-cscope helm-gtags helm-pydoc importmagic epc ctable concurrent live-py-mode lsp-pyright lsp-python-ms lsp-mode markdown-mode spinner nose pip-requirements pipenv load-env-vars pippel poetry transient compat py-isort pydoc pyenv-mode pythonic pylookup pytest pyvenv smartparens sphinx-doc stickyfunc-enhance window-purpose imenu-list xcscope yapfify auto-complete-clang flycheck-pos-tip pos-tip flycheck-rtags flycheck-ycmd ac-ispell auto-complete auto-yasnippet company-c-headers company-rtags company-ycmd fuzzy helm-c-yasnippet helm-company company yasnippet-snippets yasnippet doom-themes ycmd which-key use-package treemacs-projectile treemacs-icons-dired treemacs-evil ranger quickrun pcre2el overseer nameless macrostep inspector hybrid-mode holy-mode help-fns+ helm-xref helm-themes helm-swoop helm-rtags helm-projectile helm-org helm-mode-manager helm-make helm-descbinds helm-ag google-c-style gendoxy flycheck-package flycheck-elsa evil-mc evil-evilified-state emr elisp-slime-nav elisp-def dotenv-mode disaster diminish cpp-auto-include bind-map auto-compile ace-jump-helm-line))
  '(safe-local-variable-values '((helm-make-build-dir . "Apps/build"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

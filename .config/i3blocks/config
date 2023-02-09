@@ -1,0 +1,104 @@
+# My i3blocks config file
+#
+# This is intended for use with blocklets from
+# https://github.com/vivien/i3blocks-contrib
+#
+# List of valid properties:
+#
+# align
+# color
+# command
+# full_text
+# instance
+# interval
+# label
+# min_width
+# name
+# separator
+# separator_block_width
+# short_text
+# signal
+# urgent
+
+# Global properties
+#
+# env-var for location of the repo?
+# env-vars for the settings in this file?
+command=$HOME/.config/i3blocks-contrib/$BLOCK_NAME/$BLOCK_NAME
+separator_block_width=15
+markup=none
+
+# Week number
+[week]
+label=WEEK 
+command=date '+%V'
+interval=once
+interval=1
+
+# Volume indicator
+
+[volume]
+#label=♪ 
+label=VOL 
+interval=once
+signal=2
+STEP=5%
+
+# Memory usage
+[memory]
+label=MEM 
+# separator=false
+interval=30
+
+# [memory]
+# label=SWP 
+# instance=swap
+# interval=30
+
+# Disk usage
+# [disk]
+# label=/ 
+# DIR=/
+# interval=once
+
+# Network interface monitoring
+# [iface]
+# IFACE=wlo1
+# color=#00FF00
+# interval=once
+# separator=false
+
+# [bandwidth2]
+# INTERFACE=wlo1
+# REFRESH_TIME=1
+# markup=pango
+# interval=persist
+
+# CPU usage
+[cpu_usage2]
+LABEL=CPU
+REFRESH_TIME=1
+min_width=CPU 100.00%
+# separator=false
+markup=pango
+interval=persist
+
+# [load_average]
+# label=LOAD 
+# interval=10
+# separator=false
+
+# Temperature
+[temperature]
+label=TEMP 
+interval=10
+
+# Battery indicator
+# [battery]
+# label=⚡ 
+# interval=30
+
+# Date Time
+[time]
+command=date '+%Y-%d-%m %H:%M:%S'
+interval=1

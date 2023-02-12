@@ -53,7 +53,7 @@ floating_modifier $mod
 # Application start up commands 
 bindsym $mod+Return exec alacritty
 bindsym $mod+b exec firefox
-bindsym $mod+m exec emacs --with-profile spacemacs
+bindsym $mod+m exec emacsclient -nc -s doom -a "emacs --with-profile doom --daemon=doom"
 bindsym $mod+Shift+m exec emacs
 
 

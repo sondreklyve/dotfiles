@@ -6,8 +6,8 @@
 
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets. It is optional.
-(setq user-full-name "John Doe"
-      user-mail-address "john@doe.com")
+(setq user-full-name "Sondre Klyve"
+      user-mail-address "sondre.klyve@hotmail.no")
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom:
 ;;
@@ -21,7 +21,7 @@
 ;; See 'C-h v doom-font' for documentation and more examples of what they
 ;; accept. For example:
 ;;
-(setq doom-font (font-spec :family "Fira Code" :size 13 :weight 'semi-light))
+(setq doom-font (font-spec :family "Fira Code" :size 14 :weight 'semi-light))
 ;;      doom-variable-pitch-font (font-spec :family "Fira Sans" :size 13))
 ;;
 ;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
@@ -78,3 +78,36 @@
 (define-key evil-normal-state-map (kbd "-") 'dired-jump)
 (setq ranger-show-hidden t)
 (setq lsp-pyright-python-executable-cmd "python3")
+
+
+;; Shamelessly copied from https://codingstruggles.com/emacs/resizing-windows-doom-emacs.html
+(defhydra doom-window-resize-hydra (:hint nil)
+  "
+             _k_ increase height
+_h_ decrease width    _l_ increase width
+             _j_ decrease height
+"
+  ("h" evil-window-decrease-width)
+  ("j" evil-window-increase-height)
+  ("k" evil-window-decrease-height)
+  ("l" evil-window-increase-width)
+
+  ("q" nil))
+
+(defhydra doom-hydra-text-scale (:timeout 4)
+  "scale text"
+  ("j" text-scale-increase "in")
+  ("k" text-scale-decrease "out")
+  ("f" nil "finished" :exit t))
+
+
+(map!
+    (:prefix "SPC w"
+      :desc "Hydra resize" :n "SPC" #'doom-window-resize-hydra/body)
+    (:prefix "SPC w"
+      :desc "Hydra scale text" :n ";" #'doom-hydra-text-scale/body))
+
+
+(map! :after evil
+      :m "j" #'evil-next-visual-line
+      :m "k" #'evil-previous-visual-line)

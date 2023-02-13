@@ -68,7 +68,8 @@ alt - f : yabai -m window --toggle zoom-fullscreen
 # toggle window native fullscreen
 alt + shift - f : yabai -m window --toggle native-fullscreen
 
-# open terminal
+# open applications
 ctrl - return : open -n /Applications/Alacritty.app
-ctrl - n : exec /Applications/Emacs.app/Contents/MacOS/Emacs --with-profile spacemacs
+ctrl - n : open /Applications/Emacs.app --with-profile doom
+# ctrl - n : exec emacs --with-profile doom
 

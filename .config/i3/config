@@ -205,7 +205,7 @@ bar {
 exec_always --no-startup-id picom
 
 # wallpaper
-exec_always --no-startup-id feh --bg-scale Pictures/nature_lowpoly_wallpaper.jpg
+exec_always --no-startup-id feh --bg-scale Pictures/happy_mountains.jpg
 
 # Toggle keyboard layout
 exec --no-startup-id setxkbmap -layout us,no -option grp:win_space_toggle

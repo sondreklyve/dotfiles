@@ -53,7 +53,7 @@ floating_modifier $mod
 # Application start up commands 
 bindsym $mod+Return exec alacritty
 bindsym $mod+b exec firefox
-bindsym $mod+m exec emacsclient -nc -s doom -a "emacs --with-profile doom --daemon=doom"
+bindsym $mod+m exec emacsclient -nc -s doom 
 bindsym $mod+Shift+m exec emacs
 
 
@@ -206,6 +206,9 @@ exec_always --no-startup-id picom
 
 # wallpaper
 exec_always --no-startup-id feh --bg-scale Pictures/happy_mountains.jpg
+
+# Doom emacs daemon
+exec --no-startup-id emacs --with-profile doom --daemon="doom"
 
 # Toggle keyboard layout
 exec --no-startup-id setxkbmap -layout us,no -option grp:win_space_toggle

@@ -71,5 +71,5 @@ alt + shift - f : yabai -m window --toggle native-fullscreen
 # open applications
 ctrl - return : open -n /Applications/Alacritty.app
 ctrl - b : open -n /Applications/Firefox.app
-ctrl - n : exec /Applications/Emacs.app/Contents/MacOS/Emacs --with-profile doom
+ctrl - n : exec emacs --with-profile doom
 

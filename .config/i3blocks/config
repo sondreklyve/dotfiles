@@ -42,7 +42,6 @@ interval=once
 interval=1
 
 # Volume indicator
-
 [volume]
 #label=♪ 
 label=VOL 
@@ -50,11 +49,16 @@ interval=once
 signal=2
 STEP=5%
 
+# Keyboard layout
+[key_layout]
+label=Layout
+interval=1
+
 # Memory usage
-[memory]
-label=MEM 
+# [memory]
+# label=MEM 
 # separator=false
-interval=30
+# interval=30
 
 # [memory]
 # label=SWP 
@@ -81,13 +85,13 @@ interval=30
 # interval=persist
 
 # CPU usage
-[cpu_usage2]
-LABEL=CPU
-REFRESH_TIME=1
-min_width=CPU 100.00%
+# [cpu_usage2]
+# LABEL=CPU
+# REFRESH_TIME=1
+# min_width=CPU 100.00%
 # separator=false
-markup=pango
-interval=persist
+# markup=pango
+# interval=persist
 
 # [load_average]
 # label=LOAD 

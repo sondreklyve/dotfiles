@@ -75,6 +75,10 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
+(setq mac-option-modifier nil)
+(setq mac-command-modifier 'meta)
+(setq mac-control-modifier 'control)
+
 (define-key evil-normal-state-map (kbd "-") 'dired-jump)
 (setq ranger-show-hidden t)
 (setq lsp-pyright-python-executable-cmd "python3")

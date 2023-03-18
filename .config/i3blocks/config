@@ -43,8 +43,7 @@ interval=1
 
 # Volume indicator
 [volume]
-#label=♪ 
-label=VOL 
+label=VOL
 interval=once
 signal=2
 STEP=5%
@@ -54,59 +53,10 @@ STEP=5%
 label=Layout
 interval=1
 
-# Memory usage
-# [memory]
-# label=MEM 
-# separator=false
-# interval=30
-
-# [memory]
-# label=SWP 
-# instance=swap
-# interval=30
-
-# Disk usage
-# [disk]
-# label=/ 
-# DIR=/
-# interval=once
-
-# Network interface monitoring
-# [iface]
-# IFACE=wlo1
-# color=#00FF00
-# interval=once
-# separator=false
-
-# [bandwidth2]
-# INTERFACE=wlo1
-# REFRESH_TIME=1
-# markup=pango
-# interval=persist
-
-# CPU usage
-# [cpu_usage2]
-# LABEL=CPU
-# REFRESH_TIME=1
-# min_width=CPU 100.00%
-# separator=false
-# markup=pango
-# interval=persist
-
-# [load_average]
-# label=LOAD 
-# interval=10
-# separator=false
-
 # Temperature
 [temperature]
 label=TEMP 
 interval=10
-
-# Battery indicator
-# [battery]
-# label=⚡ 
-# interval=30
 
 # Date Time
 [time]

@@ -111,3 +111,14 @@ _h_ decrease width    _l_ increase width
 (map! :after evil
       :m "j" #'evil-next-visual-line
       :m "k" #'evil-previous-visual-line)
+
+
+(setq +lookup-provider-url-alist
+      '(("SearX"             "http://searxng.nicfab.eu/searxng/search?q=%s")
+        ("Doom Emacs issues" "https://github.com/hlissner/doom-emacs/issues?q=is%%3Aissue+%s")
+        ("DuckDuckGo"        +lookup--online-backend-duckduckgo "https://duckduckgo.com/?q=%s")
+        ("StackOverflow"     "https://stackoverflow.com/search?q=%s")
+        ("Github"            "https://github.com/search?ref=simplesearch&q=%s")
+        ("Youtube"           "https://youtube.com/results?aq=f&oq=&search_query=%s")
+        ("Arch Wiki"         "https://wiki.archlinux.org/index.php?search=%s&title=Special%3ASearch&wprov=acrw1")
+        ("AUR"               "https://aur.archlinux.org/packages?O=0&K=%s")))

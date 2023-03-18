@@ -100,5 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias update="sudo pacman -Syu"
+alias ls='ls -A --human-readable --color=auto --group-directories-first'
+alias ll='ls -l'
+alias rm='rm -I'
 export PATH=$PATH:~/.emacs.doom/bin
-neofetch

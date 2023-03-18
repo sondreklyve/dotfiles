@@ -104,3 +104,19 @@ alias ls='ls -A --human-readable --color=auto --group-directories-first'
 alias ll='ls -l'
 alias rm='rm -I'
 export PATH=$PATH:~/.emacs.doom/bin
+
+cdls() {
+	if [ $# -eq 0 ]
+	then
+		builtin cd
+	else
+		builtin cd "$@"
+	fi
+	[ $? -eq 0 ] && ls
+}
+alias cd='cdls'
+
+mkdirc() {
+	mkdir $@
+	cd "$1"
+}

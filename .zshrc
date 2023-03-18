@@ -103,7 +103,7 @@ alias update="sudo pacman -Syu"
 alias ls='ls -A --human-readable --color=auto --group-directories-first'
 alias ll='ls -l'
 alias rm='rm -I'
-export PATH=$PATH:~/.emacs.doom/bin
+export PATH=$PATH:~/.emacs.d/bin
 
 cdls() {
 	if [ $# -eq 0 ]

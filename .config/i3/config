@@ -243,7 +243,7 @@ exec_always --no-startup-id picom
 exec_always --no-startup-id feh --bg-scale Pictures/happy_mountains.jpg
 
 # Doom emacs daemon
-exec --no-startup-id emacs --with-profile doom --daemon="doom"
+exec --no-startup-id emacs --daemon="doom"
 
 # Toggle keyboard layout
 exec --no-startup-id setxkbmap -layout us,no -option grp:win_space_toggle

@@ -212,6 +212,21 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 
+# Scratchpads
+
+# Properties for the dropdown terminal
+for_window [instance="dropdownTerminal"] floating enable, resize set 625 400, move scratchpad
+
+# Properties for python window
+for_window [instance="dropdownPython"] floating enable, resize set 625 400, move scratchpad
+
+# Show/hide dropdown terminal
+bindsym $mod+n exec --no-startup-id "[ $(i3-msg [instance='dropdownTerminal'] scratchpad show 2>/dev/null) = '[{\\"success\\":true}]' ] || alacritty --class dropdownTerminal -e sh -c 'i3-msg [instance='dropdownTerminal'] focus; clear; $SHELL' &"
+
+# Show/hide dropdown python
+bindsym $mod+p exec --no-startup-id "[ $(i3-msg [instance='dropdownPython'] scratchpad show 2>/dev/null) = '[{\\"success\\":true}]' ] || alacritty --class dropdownPython -e sh -c 'i3-msg [instance='dropdownPython'] focus; clear; python' &"
+
+
 # Polybar
 # exec_always --no-startup-id ~/.config/polybar/launch.sh
 

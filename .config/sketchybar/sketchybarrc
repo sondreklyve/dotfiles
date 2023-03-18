@@ -110,7 +110,7 @@ sketchybar --add item clock right                              \
            --subscribe input input_change                      \
                                                                \
            --add item week right                               \
-           --set input script="$PLUGIN_DIR/week.sh"            \
+           --set week script="$PLUGIN_DIR/week.sh"             \
            --subscribe week                                    \
 
 ##### Finalizing Setup #####

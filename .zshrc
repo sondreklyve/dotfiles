@@ -70,7 +70,14 @@ ZSH_THEME="bira"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+    git
+    zsh-syntax-highlighting
+    zsh-autosuggestions
+    zsh-history-substring-search
+    auto-notify $plugins
+    fzf
+  )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -103,7 +110,12 @@ alias update="sudo pacman -Syu"
 alias ls='ls -A --human-readable --color=auto --group-directories-first'
 alias ll='ls -l'
 alias rm='rm -I'
-export PATH=$PATH:~/.emacs.d/bin
+export PATH=$PATH:~/.emacs.d/bin:~/.local/bin
+
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
+
+AUTO_NOTIFY_IGNORE+=("fzf")
 
 cdls() {
 	if [ $# -eq 0 ]

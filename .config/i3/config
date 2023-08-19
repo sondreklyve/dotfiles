@@ -64,6 +64,8 @@ bindsym $mod+Shift+q kill
 # start rofi (a program launcher)
 bindsym $mod+d exec --no-startup-id rofi -show drun
 bindsym $mod+Tab exec --no-startup-id rofi -show window 
+bindsym $mod+c exec --no-startup-id rofi -show calc -no-show-match -no-sort
+bindsym $mod+i exec --no-startup-id powermenu
 
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
@@ -241,6 +243,9 @@ exec_always --no-startup-id picom
 
 # wallpaper
 exec_always --no-startup-id feh --bg-scale Pictures/happy_mountains.jpg
+
+# dunst
+exec_always --no-startup-id dunst
 
 # Doom emacs daemon
 exec --no-startup-id emacs --daemon="doom"

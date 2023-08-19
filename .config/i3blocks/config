@@ -43,7 +43,7 @@ interval=1
 
 # Volume indicator
 [volume]
-label=VOL
+label=VOL 
 interval=once
 signal=2
 STEP=5%

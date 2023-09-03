@@ -74,9 +74,8 @@ plugins=(
     git
     zsh-syntax-highlighting
     zsh-autosuggestions
+    zsh-autocomplete
     zsh-history-substring-search
-    auto-notify $plugins
-    fzf
   )
 
 source $ZSH/oh-my-zsh.sh
@@ -114,8 +113,6 @@ export PATH=$PATH:~/.emacs.d/bin:~/.local/bin
 
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
-
-AUTO_NOTIFY_IGNORE+=("fzf")
 
 cdls() {
 	if [ $# -eq 0 ]

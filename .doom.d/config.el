@@ -83,6 +83,11 @@
 (setq ranger-show-hidden t)
 (setq lsp-pyright-python-executable-cmd "python3")
 
+;; Background transparency
+(set-frame-parameter nil 'alpha-background 70) ; For current frame
+(add-to-list 'default-frame-alist '(alpha-background . 70)) ; For all new frames henceforth
+(setq indicate-empty-lines 'nil)
+
 
 ;; Shamelessly copied from https://codingstruggles.com/emacs/resizing-windows-doom-emacs.html
 (defhydra doom-window-resize-hydra (:hint nil)
@@ -126,3 +131,10 @@ _h_ decrease width    _l_ increase width
         ("Youtube"           "https://youtube.com/results?aq=f&oq=&search_query=%s")
         ("Arch Wiki"         "https://wiki.archlinux.org/index.php?search=%s&title=Special%3ASearch&wprov=acrw1")
         ("AUR"               "https://aur.archlinux.org/packages?O=0&K=%s")))
+
+
+(after! vterm
+  (set-popup-rule! "*doom:vterm-popup:*" :size 0.40 :vslot -4 :select t :quit nil :ttl 0 :side 'right)
+  )
+
+(global-set-key (kbd "C-c [") #'window-toggle-side-windows)

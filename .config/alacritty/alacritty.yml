@@ -6,13 +6,14 @@ window:
     instance: Alacritty
     general: Alacritty
   opacity: 0.8
-  decorations: none 
+  decorations: buttonless
 
 scrolling:
   history: 10000
   multiplier: 3
 
 font:
+  size: 14
   normal:
     family: Source Code Pro
     style: Medium
@@ -44,6 +45,8 @@ colors:
     cyan:    '#34e2e2'
     white:   '#eeeeec'
 
+
+option_as_alt: true
 
 key_bindings:
   - { key: N, mods: Super|Shift, action: SpawnNewInstance }

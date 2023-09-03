@@ -1,0 +1,52 @@
+window:
+  padding:
+    x: 5
+    y: 5
+  class:
+    instance: Alacritty
+    general: Alacritty
+  opacity: 0.8
+  decorations: buttonless
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+font:
+  size: 14
+  normal:
+    family: Source Code Pro
+    style: Medium
+
+# Colors (Tango)
+colors:
+  primary:
+    background: "#000000"
+    foreground: "#a9b1d6"
+
+  # Normal Colors
+  normal:
+    black:   '#2e3436'
+    red:     '#cc0000'
+    green:   '#73d216'
+    yellow:  '#edd400'
+    blue:    '#3465a4'
+    magenta: '#75507b'
+    cyan:    '#06989a'
+    white:   '#d3d7cf'
+
+  bright:
+    black:   '#2e3436'
+    red:     '#ef2929'
+    green:   '#8ae234'
+    yellow:  '#fce94f'
+    blue:    '#729fcf'
+    magenta: '#ad7fa8'
+    cyan:    '#34e2e2'
+    white:   '#eeeeec'
+
+
+option_as_alt: true
+
+key_bindings:
+  - { key: N, mods: Super|Shift, action: SpawnNewInstance }

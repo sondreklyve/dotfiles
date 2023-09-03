@@ -114,6 +114,9 @@ export PATH=$PATH:~/.emacs.d/bin:~/.local/bin
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
 
+bindkey -M emacs '^P' history-substring-search-up
+bindkey -M emacs '^N' history-substring-search-down
+
 cdls() {
 	if [ $# -eq 0 ]
 	then

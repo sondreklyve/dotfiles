@@ -105,8 +105,18 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# OS specific config
+case "$OSTYPE" in
+  darwin*)
+    alias ls='ls -A --color=auto'
+    ;;
+  linux*)
+    alias ls='ls -A --human-readable --color=auto --group-directories-first'
+    ;;
+esac
+
 alias update="sudo pacman -Syu"
-alias ls='ls -A --human-readable --color=auto --group-directories-first'
 alias ll='ls -l'
 alias rm='rm -I'
 export PATH=$PATH:~/.emacs.d/bin:~/.local/bin

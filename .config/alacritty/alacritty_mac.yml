@@ -13,9 +13,9 @@ scrolling:
   multiplier: 3
 
 font:
-  size: 14
+  size: 16
   normal:
-    family: Source Code Pro
+    family: JetBrains Mono
     style: Medium
 
 # Colors (Tango)

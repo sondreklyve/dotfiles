@@ -254,7 +254,7 @@ exec --no-startup-id emacs --daemon="doom"
 exec --no-startup-id setxkbmap -layout us,no -option grp:win_space_toggle
 
 # Set up monitor
-exec --no-startup-id xrandr --output DisplayPort-2 --mode 1920x1080 --rate 144 --set TearFree
+exec --no-startup-id xrandr --output DisplayPort-2 --mode 1920x1080 --rate 144 --set TearFree on
 
 # Open applications at startup in the right workspaces
 

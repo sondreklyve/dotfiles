@@ -71,5 +71,4 @@ alt + shift - f : yabai -m window --toggle native-fullscreen
 # open applications
 ctrl - return : open -n /Applications/Alacritty.app
 ctrl - b : open -n /Applications/Firefox.app
-ctrl - m : exec emacs
-
+ctrl - m : exec emacsclient -nc -a emacs

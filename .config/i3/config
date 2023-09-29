@@ -54,7 +54,7 @@ floating_modifier $mod
 # Application start up commands 
 bindsym $mod+Return exec alacritty
 bindsym $mod+b exec firefox
-bindsym $mod+m exec emacsclient -nc -a ''
+bindsym $mod+m exec emacsclient -nc -a '' -s 'doom'
 
 
 # kill focused window
@@ -251,6 +251,9 @@ exec --no-startup-id setxkbmap -layout us,no -option grp:win_space_toggle
 
 # Set up monitor
 exec --no-startup-id xrandr --output DisplayPort-2 --mode 1920x1080 --rate 144 --set TearFree on
+
+# Launch emacs daemon on startup
+exec --no-startup-id emacs --daemon=doom
 
 # Open applications at startup in the right workspaces
 

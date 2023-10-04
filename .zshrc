@@ -120,6 +120,8 @@ alias update="sudo pacman -Syu"
 alias ll='ls -l'
 alias rm='rm -I'
 alias stow='stow --dir="$HOME/dotfiles/" --target="$HOME/" .'
+alias gs='git status'
+
 export PATH=$PATH:~/.emacs.d/bin:~/.local/bin
 
 bindkey "$terminfo[kcuu1]" history-substring-search-up

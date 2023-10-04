@@ -13,7 +13,7 @@ scrolling:
   multiplier: 3
 
 font:
-  size: 10 
+  size: 11
   normal:
     family: JetBrains Mono Nerd Font
     style: Medium

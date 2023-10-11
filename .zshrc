@@ -121,6 +121,7 @@ alias ll='ls -l'
 alias rm='rm -I'
 alias stow='stow --dir="$HOME/dotfiles/" --target="$HOME/" .'
 alias gs='git status'
+alias python="python3"
 
 export PATH=$PATH:~/.emacs.d/bin:~/.local/bin
 

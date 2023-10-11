@@ -46,17 +46,10 @@ interval=1
 label=VOL 
 interval=once
 signal=2
-STEP=5%
 
 # Keyboard layout
-[key_layout]
-label=Layout
-interval=1
-
-# Temperature
-#[temperature]
-#label=TEMP 
-#interval=10
+[kbdd_layout]
+interval=persists
 
 # Date Time
 [time]

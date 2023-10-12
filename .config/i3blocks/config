@@ -49,7 +49,7 @@ signal=2
 
 # Keyboard layout
 [kbdd_layout]
-interval=persists
+interval=persist
 
 # Date Time
 [time]

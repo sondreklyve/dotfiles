@@ -54,6 +54,7 @@ floating_modifier $mod
 # Application start up commands 
 bindsym $mod+Return exec alacritty
 bindsym $mod+b exec firefox
+bindsym $mod+s exec spotify-launcher
 bindsym $mod+m exec emacsclient -nc -a '' -s 'doom'
 
 
@@ -106,7 +107,7 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+# bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
